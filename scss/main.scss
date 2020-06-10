@@ -1,0 +1,96 @@
+@import 'utilities';
+@import 'timeline';
+@import 'media';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Dosis', sans-serif;
+  line-height: 1.6;
+  background: $bg-color;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+
+  ul {
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    padding: 1rem 1.5rem;
+
+    a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: transparent solid 3px;
+      padding-bottom: 0.5rem;
+      transition: 0.5s border-color;
+
+      &:hover {
+        border-color: $medium-color;
+      }
+
+      &.current {
+        border-color: $main-color;
+      }
+    }
+  }
+}
+
+#header {
+  &-main {
+    background: url('../img/bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+  }
+
+  &-inner {
+    background: url('../img/bg.jpg') no-repeat center center/ cover;
+    height: 5rem;
+    color: #fff;
+    border-bottom: solid $light-color 3px;
+  }
+}
+
+.year {
+  padding-bottom: 1rem;
+  font-size: 20px;
+}
+
+.name {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 70px;
+
+  &-text {
+    font-family: 'Shadows Into Light', cursive;
+  }
+}
+
+.para-title {
+  color: $light-color;
+  font-size: 1.4rem;
+  padding: 0.75rem 0;
+}
+
+.art-name {
+  font-style: italic;
+}
+
+.art {
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,48 @@
+$website-width: 1280px;
+$box-color: #607d8b;
+$medium-color: #2196f3;
+$light-color: #4dd0e1;
+$main-color: #ff9800;
+$bg-color: #212121;
+
+.container {
+  max-width: $website-width;
+  margin: auto;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: auto;
+  width: 400px;
+  border: 3px solid #000;
+  box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.5);
+}
+
+.quote {
+  font-family: 'Indie Flower', cursive;
+  padding: 1rem 0;
+  font-size: 18px;
+}
+
+.section-title {
+  display: block;
+  font-size: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  width: 6rem;
+  height: 2px;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
